@@ -2,7 +2,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ado2gheagentpool
+  vmImage: ado2ghe
 
 steps:
 - task: Maven@3
