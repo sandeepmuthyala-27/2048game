@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ado2ghe
+  vmImage: ado2gheagentpool
 
 steps:
 - script: echo Hello, world!
