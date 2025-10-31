@@ -1,7 +1,7 @@
 trigger:
    - master
  
-pool: ado2gheagentpool
+pool: ado2ghe
  
 steps:
 - task: Maven@4
