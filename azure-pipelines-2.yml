@@ -1,0 +1,15 @@
+trigger:
+   - master
+ 
+pool: ado2gheagentpool
+ 
+steps:
+- task: Maven@4
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'clean install -Dcheckstyle.skip=true'
+    options: '-DskipTests'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
